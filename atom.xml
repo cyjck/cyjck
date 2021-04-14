@@ -6,7 +6,7 @@
   <link href="http://cyjck.ml/atom.xml" rel="self"/>
   
   <link href="http://cyjck.ml/"/>
-  <updated>2021-04-08T11:44:58.981Z</updated>
+  <updated>2021-04-14T14:17:53.649Z</updated>
   <id>http://cyjck.ml/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>员工宿舍组网</title>
+    <link href="http://cyjck.ml/2021/04/14/%E5%91%98%E5%B7%A5%E5%AE%BF%E8%88%8D%E7%BB%84%E7%BD%91/"/>
+    <id>http://cyjck.ml/2021/04/14/%E5%91%98%E5%B7%A5%E5%AE%BF%E8%88%8D%E7%BB%84%E7%BD%91/</id>
+    <published>2021-04-14T13:41:29.000Z</published>
+    <updated>2021-04-14T14:17:53.649Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="使用思科模拟器模拟组网"><a href="#使用思科模拟器模拟组网" class="headerlink" title="使用思科模拟器模拟组网"></a>使用思科模拟器模拟组网</h1><h3 id="软件下载地址："><a href="#软件下载地址：" class="headerlink" title="软件下载地址："></a>软件下载地址：</h3><pre><code>链接:https://pan.baidu.com/s/1LtSa4Fs-5dZwXzb46a95FQ 提取码:1111 </code></pre><h4 id="1-进入模拟器，我们主要用到图中红圈标注的三种设备设施，分别是网络设备（Network-Devices），终端设备（End-Devices），连接线（Connections），其中网络设备涉及路由器（Routers）和交换机（Switches）两种，终端设备涉及台式机和笔记本两种，交换机的使用是为了让更多的设备连入所在的子网，终端设备可随意选择。"><a href="#1-进入模拟器，我们主要用到图中红圈标注的三种设备设施，分别是网络设备（Network-Devices），终端设备（End-Devices），连接线（Connections），其中网络设备涉及路由器（Routers）和交换机（Switches）两种，终端设备涉及台式机和笔记本两种，交换机的使用是为了让更多的设备连入所在的子网，终端设备可随意选择。" class="headerlink" title="1.  进入模拟器，我们主要用到图中红圈标注的三种设备设施，分别是网络设备（Network Devices），终端设备（End Devices），连接线（Connections），其中网络设备涉及路由器（Routers）和交换机（Switches）两种，终端设备涉及台式机和笔记本两种，交换机的使用是为了让更多的设备连入所在的子网，终端设备可随意选择。"></a>1.  进入模拟器，我们主要用到图中红圈标注的三种设备设施，分别是网络设备（Network Devices），终端设备（End Devices），连接线（Connections），其中网络设备涉及路由器（Routers）和交换机（Switches）两种，终端设备涉及台式机和笔记本两种，交换机的使用是为了让更多的设备连入所在的子网，终端设备可随意选择。</h4><p><img src="https://pic1.zhimg.com/80/v2-9328a2a37d0626d3bd93eeff0562f428_720w.jpg" alt="Alt text"></p><h4 id="2-先建立一个宿舍的子网，使用1台路由器，1台交换机，2台终端设备，首先，拉取一个路由器，我们选择这个位置的路由器，点击路由，看到在Physical选项卡下，设备的接口为Serial串口和FastEthernet端口，串口负责子网间连接，端口负责子网内连接。因为我们是4个子网，所以有4台路由，必须有3个串口，这里还少一个，我们需要添加模块，首先关闭电源。"><a href="#2-先建立一个宿舍的子网，使用1台路由器，1台交换机，2台终端设备，首先，拉取一个路由器，我们选择这个位置的路由器，点击路由，看到在Physical选项卡下，设备的接口为Serial串口和FastEthernet端口，串口负责子网间连接，端口负责子网内连接。因为我们是4个子网，所以有4台路由，必须有3个串口，这里还少一个，我们需要添加模块，首先关闭电源。" class="headerlink" title="2. 先建立一个宿舍的子网，使用1台路由器，1台交换机，2台终端设备，首先，拉取一个路由器，我们选择这个位置的路由器，点击路由，看到在Physical选项卡下，设备的接口为Serial串口和FastEthernet端口，串口负责子网间连接，端口负责子网内连接。因为我们是4个子网，所以有4台路由，必须有3个串口，这里还少一个，我们需要添加模块，首先关闭电源。"></a>2. 先建立一个宿舍的子网，使用1台路由器，1台交换机，2台终端设备，首先，拉取一个路由器，我们选择这个位置的路由器，点击路由，看到在Physical选项卡下，设备的接口为Serial串口和FastEthernet端口，串口负责子网间连接，端口负责子网内连接。因为我们是4个子网，所以有4台路由，必须有3个串口，这里还少一个，我们需要添加模块，首先关闭电源。</h4><p><img src="https://pic1.zhimg.com/80/v2-f0bc6b0c00efaa2e3e85f7f0354405ac_720w.jpg" alt="Alt text"></p><h4 id="3-在左侧模块中选择串口模块，拉到右侧设备空缺处，完成模块添加，然后开启电源。"><a href="#3-在左侧模块中选择串口模块，拉到右侧设备空缺处，完成模块添加，然后开启电源。" class="headerlink" title="3. 在左侧模块中选择串口模块，拉到右侧设备空缺处，完成模块添加，然后开启电源。"></a>3. 在左侧模块中选择串口模块，拉到右侧设备空缺处，完成模块添加，然后开启电源。</h4><p><img src="https://pic3.zhimg.com/80/v2-d3fc96c3d0031991193467198f9bec6e_720w.jpg" alt="Alt text"></p><h4 id="4-选择Config选项卡，这里主要填写4个接口的信息，涉及1个端口，3个串口，定义FastEthernet0-0端口信息填写为本子网的网关，填写完接口信息，勾选on，开启端口。"><a href="#4-选择Config选项卡，这里主要填写4个接口的信息，涉及1个端口，3个串口，定义FastEthernet0-0端口信息填写为本子网的网关，填写完接口信息，勾选on，开启端口。" class="headerlink" title="4. 选择Config选项卡，这里主要填写4个接口的信息，涉及1个端口，3个串口，定义FastEthernet0/0端口信息填写为本子网的网关，填写完接口信息，勾选on，开启端口。"></a>4. 选择Config选项卡，这里主要填写4个接口的信息，涉及1个端口，3个串口，定义FastEthernet0/0端口信息填写为本子网的网关，填写完接口信息，勾选on，开启端口。</h4><p><img src="https://pic2.zhimg.com/80/v2-265e7ed6ca4cf3d46d0af797ebd3ae55_720w.jpg" alt="Alt text"></p><h4 id="5-三个串口自定义为Serial2-0为横向路由的连接，Serial3-0为纵向路由的连接，Serial6-0为对角路由的连接，3个串口填写好相应的信息，不要忘记勾选on"><a href="#5-三个串口自定义为Serial2-0为横向路由的连接，Serial3-0为纵向路由的连接，Serial6-0为对角路由的连接，3个串口填写好相应的信息，不要忘记勾选on" class="headerlink" title="5. 三个串口自定义为Serial2/0为横向路由的连接，Serial3/0为纵向路由的连接，Serial6/0为对角路由的连接，3个串口填写好相应的信息，不要忘记勾选on"></a>5. 三个串口自定义为Serial2/0为横向路由的连接，Serial3/0为纵向路由的连接，Serial6/0为对角路由的连接，3个串口填写好相应的信息，不要忘记勾选on</h4><p><img src="https://pic4.zhimg.com/80/v2-86e632c1d6ee4cbf35716b4feafa6693_720w.jpg" alt="Alt text"></p><h4 id="6-拉取2台终端设备和1台交换机，同时连接各个设备，注意，与交换机连接的路由器接口必须是之前填写信息的FastEthernet0-0端口。"><a href="#6-拉取2台终端设备和1台交换机，同时连接各个设备，注意，与交换机连接的路由器接口必须是之前填写信息的FastEthernet0-0端口。" class="headerlink" title="6. 拉取2台终端设备和1台交换机，同时连接各个设备，注意，与交换机连接的路由器接口必须是之前填写信息的FastEthernet0/0端口。"></a>6. 拉取2台终端设备和1台交换机，同时连接各个设备，注意，与交换机连接的路由器接口必须是之前填写信息的FastEthernet0/0端口。</h4><p><img src="https://pic2.zhimg.com/80/v2-f528ad4c5219bc4645b266f835ee3811_720w.jpg" alt="Alt text"></p><h4 id="7-设定子网内终端设备的信息，这里点击终端设备，选择Desktop选项卡，再点击IP-Configuration。"><a href="#7-设定子网内终端设备的信息，这里点击终端设备，选择Desktop选项卡，再点击IP-Configuration。" class="headerlink" title="7. 设定子网内终端设备的信息，这里点击终端设备，选择Desktop选项卡，再点击IP Configuration。"></a>7. 设定子网内终端设备的信息，这里点击终端设备，选择Desktop选项卡，再点击IP Configuration。</h4><p><img src="https://pic4.zhimg.com/80/v2-4cca19eb95eeb199d236186a3e78983f_720w.jpg" alt="Alt text"></p><h4 id="8-填写设备信息，IP地址选择第1个子网可分配IP地址范围内除去网关地址外的任一地址，这里选择192-168-99-4，另外填写子网掩码和网关。"><a href="#8-填写设备信息，IP地址选择第1个子网可分配IP地址范围内除去网关地址外的任一地址，这里选择192-168-99-4，另外填写子网掩码和网关。" class="headerlink" title="8. 填写设备信息，IP地址选择第1个子网可分配IP地址范围内除去网关地址外的任一地址，这里选择192.168.99.4，另外填写子网掩码和网关。"></a>8. 填写设备信息，IP地址选择第1个子网可分配IP地址范围内除去网关地址外的任一地址，这里选择192.168.99.4，另外填写子网掩码和网关。</h4><p><img src="https://pic1.zhimg.com/80/v2-01bf6d26afbe6e96efd9829c5510e5dc_720w.jpg" alt="Alt text"></p><h4 id="9-同样我们设定好另外一台终端设备的信息，完成后通过右侧边栏中的备注，我们把子网的2台终端设备和1台路由器标注出它们的地址，然后点击Command-Prompt。"><a href="#9-同样我们设定好另外一台终端设备的信息，完成后通过右侧边栏中的备注，我们把子网的2台终端设备和1台路由器标注出它们的地址，然后点击Command-Prompt。" class="headerlink" title="9. 同样我们设定好另外一台终端设备的信息，完成后通过右侧边栏中的备注，我们把子网的2台终端设备和1台路由器标注出它们的地址，然后点击Command Prompt。"></a>9. 同样我们设定好另外一台终端设备的信息，完成后通过右侧边栏中的备注，我们把子网的2台终端设备和1台路由器标注出它们的地址，然后点击Command Prompt。</h4><p><img src="https://pic1.zhimg.com/80/v2-ebd114f2a1fe99419f6dbff7fe9ad214_720w.jpg" alt="Alt text"><br>10. 进入命令提示符后，我们ping下子网内的另外一台设备和路由网关，发现能够ping通，第1个子网组网成功。</p><p><img src="https://pic4.zhimg.com/80/v2-7a02c6124fd45463582fe1a8a1e10ecf_720w.jpg" alt="Alt text"></p><h4 id="11-重复以上步骤，组建好另外3个子网。"><a href="#11-重复以上步骤，组建好另外3个子网。" class="headerlink" title="11. 重复以上步骤，组建好另外3个子网。"></a>11. 重复以上步骤，组建好另外3个子网。</h4><p><img src="https://pic1.zhimg.com/80/v2-bac52921953dac4924c5b8af7a854a14_720w.jpg" alt="Alt text"></p><h4 id="12-四个子网互联，注意之前的串口定义，Serial2-0为横向连接，Serial3-0为纵向连接，Serial6-0为对角连接。"><a href="#12-四个子网互联，注意之前的串口定义，Serial2-0为横向连接，Serial3-0为纵向连接，Serial6-0为对角连接。" class="headerlink" title="12. 四个子网互联，注意之前的串口定义，Serial2/0为横向连接，Serial3/0为纵向连接，Serial6/0为对角连接。"></a>12. 四个子网互联，注意之前的串口定义，Serial2/0为横向连接，Serial3/0为纵向连接，Serial6/0为对角连接。</h4><p><img src="https://pic3.zhimg.com/80/v2-48dbe94e19be8ece4ff85b84a1f8e596_720w.jpg" alt="Alt text"></p><h4 id="13-各个子网的设备互ping，都能ping通，至此，4个子网组网成功。"><a href="#13-各个子网的设备互ping，都能ping通，至此，4个子网组网成功。" class="headerlink" title="13. 各个子网的设备互ping，都能ping通，至此，4个子网组网成功。"></a>13. 各个子网的设备互ping，都能ping通，至此，4个子网组网成功。</h4><p><img src="https://pic4.zhimg.com/80/v2-b6746b7514a9826e86c835997e6e251f_720w.jpg" alt="Alt text"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;使用思科模拟器模拟组网&quot;&gt;&lt;a href=&quot;#使用思科模拟器模拟组网&quot; class=&quot;headerlink&quot; title=&quot;使用思科模拟器模拟组网&quot;&gt;&lt;/a&gt;使用思科模拟器模拟组网&lt;/h1&gt;&lt;h3 id=&quot;软件下载地址：&quot;&gt;&lt;a href=&quot;#软件下载地址：&quot; c</summary>
+      
+    
+    
+    
+    
+    <category term="路由交换" scheme="http://cyjck.ml/tags/%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>《小王子-》-狐狸告诉小王子一个秘密</title>
